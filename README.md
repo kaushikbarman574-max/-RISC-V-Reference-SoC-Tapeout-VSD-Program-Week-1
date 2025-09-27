@@ -1,51 +1,59 @@
-# -RISC-V-Reference-SoC-Tapeout-VSD-Program-Week-1
-🔧5-day Verilog RTL workshop for week 1 : Day 1 covers iverilog, GTKWave, Yosys, Sky130; Day 2 dives into timing libs, synthesis styles; Day 3 focuses on logic optimizations; Day 4 explores GLS, sim-synth mismatch; Day 5 wraps with if/case constructs, loops, and generate blocks for scalable RTL.
+🚀 RISC-V Reference SoC Tapeout – VSD Program Week 1
+🔧 5-Day Verilog RTL Workshop This repository documents Week 1 of the VSD Program, focused on Verilog RTL design and synthesis. Each day builds progressively:
+
+Day 1: iverilog, GTKWave, Yosys, Sky130
+
+Day 2: Timing libraries, synthesis styles
+
+Day 3: Logic optimizations
+
+Day 4: GLS, sim-synth mismatch
+
+Day 5: if/case constructs, loops, generate blocks
 
 🔧 Verilog RTL Design & Synthesis Workshop
-Welcome to the official repository for the 5-Day Verilog RTL Design & Synthesis Workshop, a comprehensive, hands-on training program designed to equip engineers and students with practical skills in RTL design, simulation, synthesis, and verification using open-source tools.
+Welcome to the official repository for the 5-Day Verilog RTL Design & Synthesis Workshop, a hands-on training program designed to equip engineers and students with practical skills in RTL design, simulation, synthesis, and verification using open-source tools.
 
 📚 Workshop Overview
-This workshop blends theory with real-world labs to help participants understand the full digital design flow—from writing Verilog code to simulating, synthesizing, and optimizing it for silicon. The sessions are structured to progressively build expertise using tools like iverilog, GTKWave, Yosys, and Sky130 PDKs.
+This workshop blends theory with real-world labs to help participants understand the full digital design flow—from writing Verilog code to simulating, synthesizing, and optimizing it for silicon. Tools used include iverilog, GTKWave, Yosys, and Sky130 PDKs.
 
 🗓️ Daily Breakdown
 Day 1: Simulation & Synthesis Foundations
-Introduction to Icarus Verilog (iverilog): compiling and simulating Verilog designs
+Icarus Verilog (iverilog): compiling and simulating Verilog designs
 
-Waveform analysis using GTKWave: visualizing signal transitions and debugging
+GTKWave: waveform visualization and debugging
 
-Overview of Yosys: RTL-to-gate-level synthesis flow
+Yosys: RTL-to-gate-level synthesis flow
 
-Labs using Sky130 PDKs: applying synthesis to real-world open-source fabrication targets Focus: Building a complete simulation and synthesis flow using open-source tools. Participants gain hands-on experience in simulating basic designs and synthesizing them for fabrication.
+Labs using Sky130 PDKs Focus: Build a complete simulation and synthesis flow using open-source tools.
 
 Day 2: Timing & Coding Strategies
-Understanding timing libraries (.lib): cell delays, setup/hold constraints, and timing arcs
+Timing libraries (.lib): cell delays, setup/hold constraints
 
-Hierarchical vs flat synthesis: trade-offs in modularity, optimization, and runtime
+Hierarchical vs flat synthesis: modularity vs optimization
 
-Efficient flop coding styles: reset strategies, enable logic, and synthesis-friendly patterns Focus: Writing RTL that aligns with timing constraints and synthesis goals. Participants learn how coding styles directly affect timing closure and resource usage.
+Flop coding styles: reset logic, enable signals Focus: Write RTL aligned with timing and synthesis goals.
 
 Day 3: RTL Optimization Techniques
-Combinational logic optimization: constant propagation, logic pruning, and gate minimization
+Combinational logic: constant folding, gate pruning
 
-Sequential logic optimization: state machine simplification, register balancing
+Sequential logic: FSM simplification, register balancing
 
-Handling unused outputs: identifying and removing dead logic Focus: Improving RTL efficiency for area, power, and performance. Labs demonstrate how synthesis tools optimize logic and how designers can guide those optimizations.
+Unused outputs: dead logic elimination Focus: Improve RTL efficiency for area, power, and performance.
 
 Day 4: Verification & Mismatch Debugging
-Introduction to Gate-Level Simulation (GLS): validating synthesized netlists
+Gate-Level Simulation (GLS): validating synthesized netlists
 
-Identifying synthesis-simulation mismatches: latch inference, reset mismatches, and timing violations
+Synthesis-Simulation mismatches: latch inference, reset mismatches
 
-Deep dive into blocking vs non-blocking assignments: simulation behavior vs synthesis interpretation
-
-Labs on mismatch debugging using blocking statements Focus: Ensuring functional correctness post-synthesis. Participants learn to debug subtle issues that arise due to coding style and synthesis behavior.
+Blocking vs non-blocking assignments Focus: Debug functional mismatches and validate post-synthesis behavior.
 
 Day 5: Control Logic & Scalable RTL
-Safe use of if and case constructs: avoiding unintended latch inference and logic duplication
+if and case constructs: avoiding latch inference
 
-Labs on incomplete if and overlapping case statements: identifying synthesis warnings and functional bugs
+Labs on incomplete and overlapping cases
 
-Using for loops and generate blocks: scalable design for parameterized modules and arrays Focus: Writing robust, reusable RTL for complex systems. Participants learn how to structure control logic and scale designs using Verilog constructs.
+for loops and generate blocks for scalable design Focus: Write reusable, parameterized RTL for complex systems.
 
 🛠 Tools Used
 Icarus Verilog
@@ -66,14 +74,11 @@ Git and terminal proficiency
 🚀 Setup Instructions
 bash
 # Clone the repository
-git clone https://github.com/your-username/verilog-rtl-workshop.git
+git clone https://github.com/kaushikbarman574-max/verilog-rtl-workshop.git
 cd verilog-rtl-workshop
 
 # Install dependencies (example for Ubuntu)
 sudo apt install iverilog gtkwave yosys
-
-# Explore lab folders
-cd Day1/
 📂 Repository Structure
 Code
 ├── Day1/         # Simulation & Synthesis labs
@@ -94,3 +99,12 @@ Optimize RTL for performance and area
 Validate designs through gate-level simulation
 
 Write scalable and reusable RTL modules
+
+📝 Summary
+This repository documents a structured 5-day workshop designed to teach Verilog RTL design and synthesis using open-source tools. Each day builds on the previous, starting with simulation fundamentals and progressing through timing analysis, logic optimization, verification techniques, and scalable RTL coding practices. Participants gain hands-on experience with tools like iverilog, GTKWave, Yosys, and Sky130 PDKs, while learning to write efficient, synthesis-friendly Verilog code. By the end of the workshop, attendees are equipped to simulate, synthesize, optimize, and verify digital designs in a real-world open-source flow.
+
+🤝 Contributing
+Contributions are welcome! If you'd like to improve documentation, add new labs, or enhance tool integration, feel free to submit a pull request. For major changes, please open an issue first to discuss your ideas.
+
+📬 Contact
+For questions, feedback, or collaboration inquiries, reach out via GitHub Issues.
